@@ -1,19 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/nord_main"
+    android:padding="8dp"
     tools:context=".MainActivity">
 
+    <Toolbar
+        android:id="@+id/toolbarBarContainer"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@color/nord_toolbar"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonHamburgerMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|end"
+            android:contentDescription="HAMBURGER"
+            android:src="@mipmap/ic_hamburger"
+            tools:ignore="HardcodedText" />
+    </Toolbar>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutBarFragmentContainer"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/toolbarBarContainer"
+        android:background="@color/nord_toolbar"
+        android:visibility="invisible" />
+
     <TextView
+        android:id="@+id/textViewSplashText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/nord_main"
+        android:letterSpacing="0.05"
+        android:text="@string/code"
+        android:textAlignment="center"
+        android:textColor="@color/nord_toolbar"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

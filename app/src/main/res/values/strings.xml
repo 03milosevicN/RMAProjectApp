@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">RMAProjectApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="code"><![CDATA[< / >]]></string>
+    <string name="create_file">Create file</string>
+    <string name="create"><![CDATA[> Create file]]></string>
+    <string name="open_"><![CDATA[> Open file]]></string>
+    <string name="result">Result:</string>
+    <string name="edit"><![CDATA[> Edit]]></string>
+
 </resources>

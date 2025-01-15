@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BarFragment"
+    android:paddingTop="4dp">
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="@color/nord_toolbar"
+        tools:ignore="TouchTargetSizeCheck"
+        android:text="@string/create"
+        android:textColor="@color/nord_main_text"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="@color/nord_toolbar"
+        tools:ignore="TouchTargetSizeCheck"
+        android:text="@string/open_"
+        android:textColor="@color/nord_main_text"
+        android:textSize="18sp" />
+
+</LinearLayout>
